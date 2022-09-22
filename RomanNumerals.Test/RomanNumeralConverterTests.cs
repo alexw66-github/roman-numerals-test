@@ -3,6 +3,29 @@
   public class RomanNumeralConverterTests
   {
     [Fact]
+    public void Count_ReturnsTotalInstances()
+    {
+      // arrange
+      var input = new[] { 1, 1, 1, 5, 10 };
+      var expected = new Dictionary<string, int>()
+      {
+        { "I", 3 },
+        { "V", 1 },
+        { "X", 1 },
+      };
+
+      // act
+      var actual = RomanNumeralConverter.Count(input);
+
+      // assert
+      Assert.Equal(expected.Count, actual.Count);
+      for (int index = 0; index < actual.Count; index++)
+      {
+        Assert.Equal(expected.ElementAt(index), actual.ElementAt(index));
+      }
+    }
+    
+    [Fact]
     public void ConvertTop_ReturnsSpecifiedCount()
     {
       // arrange

@@ -12,6 +12,14 @@ namespace RomanNumerals
       SeedLookupReference();
     }
 
+    public static IDictionary<string, int> Count(IEnumerable<int> values)
+    {
+      return values
+        .GroupBy(x => x)
+        .OrderBy(x => x.Key)
+        .ToDictionary(x => Convert(x.Key), x => x.Count());
+    }
+
     public static IEnumerable<string> ConvertTop(IEnumerable<int> values, int count = 5)
     {
       return Convert(values.Take(count));

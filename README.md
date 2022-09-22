@@ -25,6 +25,9 @@ Output collection:
 .
 50 - L -  10015
 
+> **Note**
+> This can also be achieved with Linq, by grouping by number first then providing the converted value and count.
+
 Rules for participation:
 1.	No collaboration
 2.	No Google / Bing / Stackoverflow / etc.
