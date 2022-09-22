@@ -3,6 +3,9 @@ EG:
 Input collection: 1,3,4,6,1,3,10...N
 Output collection: I,III,IV,VI,I,III,X...N
 
+> **Note**
+> For this challenge I'll create a static class that converts a given number into a roman numeral. Given that performance is mentioned and we have a fixed range, it makes sense to preload the values into a dictionary (rather than convert them on the fly). As it's an in-memory operation that should make it as fast as possible.
+
 2.	Assume while solving problem #1 we find out that it is actually computationally expensive (relatively speaking) to convert all integers to Roman, and after speaking to users our requirement gets refined to only providing the top 5 roman values by count of occurrence in the source list. Please can you show how you would revise your code from #1 to meet this new requirement.
 EG: Input collection as per #1
 Output collection: I,III,X,V,VII
