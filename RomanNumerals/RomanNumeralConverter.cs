@@ -12,6 +12,11 @@ namespace RomanNumerals
       SeedLookupReference();
     }
 
+    public static IEnumerable<string> ConvertTop(IEnumerable<int> values, int count = 5)
+    {
+      return Convert(values.Take(count));
+    }
+
     public static IEnumerable<string> Convert(IEnumerable<int> values)
     {
       var converted = new ConcurrentBag<(long index, string value)>();

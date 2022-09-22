@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RomanNumerals.Console\RomanNumerals.Console.csproj" />
     <ProjectReference Include="..\RomanNumerals\RomanNumerals.csproj" />
   </ItemGroup>
 

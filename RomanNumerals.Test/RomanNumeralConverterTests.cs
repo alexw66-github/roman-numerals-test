@@ -3,6 +3,34 @@
   public class RomanNumeralConverterTests
   {
     [Fact]
+    public void ConvertTop_ReturnsSpecifiedCount()
+    {
+      // arrange
+      var input = new[] { 1, 1, 1, 5, 10 };
+      var expected = 3;
+
+      // act
+      var actual = RomanNumeralConverter.ConvertTop(input, 3);
+
+      // assert
+      Assert.Equal(expected, actual.Count());
+    }
+
+    [Fact]
+    public void ConvertTop_ReturnsTopFiveItems()
+    {
+      // arrange
+      var input = new[] { 1, 1, 1, 5, 10 };
+      var expected = 5;
+
+      // act
+      var actual = RomanNumeralConverter.ConvertTop(input);
+
+      // assert
+      Assert.Equal(expected, actual.Count());
+    }
+
+    [Fact]
     public void Convert_WithMultipleNumbers_ReturnsRomanNumeralForEach()
     {
       // arrange

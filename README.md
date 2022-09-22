@@ -10,6 +10,9 @@ Output collection: I,III,IV,VI,I,III,X...N
 EG: Input collection as per #1
 Output collection: I,III,X,V,VII
 
+> **Note**
+> This can be achieved with Linq, by selecting the top `n` values then just passing it through to the same conversion method as before. The challenge specifies `5`, so I'll set that as the default, but also allow the count to be optionally specified as well.
+
 3.	Bonus question – how would you provide a full summary of the collection from step #1 showing int value, roman equivalent & count.
 EG: Input collection as per #1
 Output collection: 
