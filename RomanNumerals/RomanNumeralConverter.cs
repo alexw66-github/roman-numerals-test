@@ -58,7 +58,7 @@ namespace RomanNumerals
       }
     }
 
-    private static string GetRomanNumeral(int value)
+    private static string GetRomanNumeral(int value) // Same as "ConvertIntToRoman(int i)"
     {
       var roman = new StringBuilder();
 
